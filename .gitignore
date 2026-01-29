@@ -1,0 +1,67 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+.venv
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# Data files (exclude raw data from version control)
+data/raw/*.csv
+data/raw/*.xlsx
+*.csv
+*.xlsx
+
+# Keep processed data structure but ignore files
+data/processed/*
+!data/processed/.gitkeep
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Visualizations (we'll commit these, but good to have option to ignore)
+# visualizations/*.png
+
+# Environment variables
+.env
+```
+
+---
+
+### **PASO 7: Estructura Final del Proyecto**
+
+Tu proyecto debería verse así en VS Code:
+```
+healthcare-screening-outreach-analysis/
+│
+├── .gitignore
+├── README.md                          # (viene de GitHub)
+├── requirements.txt                   # (vacío por ahora)
+│
+├── data/
+│   ├── raw/                          # (tus datos originales aquí)
+│   ├── processed/                    # (CSV limpio se guardará aquí)
+│   └── data_dictionary.md
+│
+├── src/
+│   ├── config.py                     # (vacío por ahora)
+│   ├── utils.py                      # (vacío por ahora)
+│   └── 01_data_cleaning.py          # (vacío por ahora)
+│
+├── visualizations/                   # (PNG se guardarán aquí)
+│
+└── docs/
+    └── methodology.md
