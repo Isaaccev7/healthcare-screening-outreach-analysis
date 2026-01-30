@@ -30,7 +30,7 @@ Methodology:
     4. Calculate impact differential (reached - not reached) per screening type
     5. Identify optimization opportunities and priority actions
 
-Author: [Your Name]
+Author: Isaac C.
 Date: January 2026
 """
 

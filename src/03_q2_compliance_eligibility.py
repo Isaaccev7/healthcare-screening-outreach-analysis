@@ -28,7 +28,7 @@ Methodology:
     3. Compute compliance rate (completed/eligible * 100)
     4. Group by number of eligible screenings and analyze patterns
 
-Author: [Your Name]
+Author: Isaac C.
 Date: January 2026
 """
 

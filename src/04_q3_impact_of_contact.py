@@ -30,7 +30,7 @@ Methodology:
     3. Compare reached vs. not reached to quantify intervention impact
     4. Analyze absolute volumes to understand business magnitude
 
-Author: [Your Name]
+Author: Isaac C.
 Date: January 2026
 """
 
