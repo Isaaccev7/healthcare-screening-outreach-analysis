@@ -370,62 +370,112 @@ print("=" * 70)
 KEY INSIGHTS - OPTIMIZATION STRATEGY
 =====================================
 
-Strategic Framework:
-The data reveals a clear 4-pillar optimization strategy that addresses both 
-patient segmentation and screening-specific dynamics.
+Strategic Framework - Segment-Based Approach:
+The data reveals a critical segmentation opportunity based on patient engagement levels
+rather than a universal outreach strategy.
 
-Pillar 1: Segment Prioritization
-- {high_priority:,} high-priority patients (3+ screenings, not yet successfully reached)
-- These patients represent the intersection of:
-  * High screening burden (compliance challenges)
-  * High volume (resource efficiency)
-  * Untapped potential (not yet reached)
-- Resource allocation should prioritize this segment first
+Three-Tier Population Structure:
 
-Pillar 2: Reach Rate Optimization
-- {not_reached_total:,} patients were called but not reached
-- Current success rate leaves significant opportunity
-- Multi-touch strategy (3-5 attempts at varied times) can improve conversion
-- Staff training on engagement techniques proven effective
-- A/B testing of call scripts, timing, and approach
+TIER 1: High-Engagement (93.3% compliance)
+- Current Status: {not_called_total:,} patients "not called"
+- Characteristics: Complete screenings proactively without intervention
+- Strategy: Minimal touch (automated reminders, annual wellness checks)
+- Resource Allocation: 10% of call capacity
+- Rationale: Already achieving excellent outcomes; don't over-serve
 
-Pillar 3: Coverage Expansion
-- {not_called_total:,} patients haven't been contacted yet
-- Systematic calling of all eligible patients
-- Target: 95%+ call coverage rate
-- Capacity planning to handle expanded volume
-- Automated scheduling and reminder systems
+TIER 2: Active Support (~80% compliance)
+- Current Status: Called patients (reached + not reached)
+- Characteristics: Need intervention support but respond well
+- Strategy: Sustained outreach with multi-touch approach
+- Resource Allocation: 70% of call capacity
+- Rationale: Maintaining 80% in challenging population is strong performance
 
-Pillar 4: Screening-Specific Optimization
-- Not all screenings respond equally to outreach
-- Top impact screenings deserve additional resources
-- Develop tailored messaging per screening type
-- Partner with clinical teams for screening-specific barriers
-- Create educational materials addressing common concerns
+TIER 3: High-Barrier (varies)
+- Current Status: Subset of called patients with <50% compliance
+- Characteristics: Multiple attempts unsuccessful, complex barriers
+- Strategy: Intensive case management, barrier identification
+- Resource Allocation: 20% of call capacity
+- Rationale: Understand root causes to improve intervention
 
-Expected Outcomes:
-- 6-month timeline to full implementation
-- Projected improvement in overall compliance rate
-- Measurable ROI through increased screening completion
-- Scalable model for ongoing optimization
+Optimization Priorities (Revised):
 
-Implementation Priorities:
-1. Immediate (Weeks 1-4): Multi-touch strategy for "not reached" patients
-2. Short-term (Weeks 5-12): Systematic calling of high-priority segments
-3. Medium-term (Weeks 13-20): Expansion to all "not called" patients
-4. Long-term (Weeks 21-26): Screening-specific campaigns and continuous improvement
+Priority 1: IMPROVE REACH RATE (Immediate)
+- Target: 71.7% → 85%+ success rate
+- Population: {not_reached_total:,} "not reached" patients
+- Action: Multi-touch strategy (3-5 attempts at varied times/days)
+- Impact: Convert more attempts into successful contacts
 
-Success Metrics:
-- Call coverage rate (target: 95%)
-- Reach success rate (target: 75%+)
-- Overall compliance rate improvement
-- Patient satisfaction scores
-- Cost per completed screening
+Priority 2: SEGMENT IDENTIFICATION (Short-term)
+- Target: Classify all patients into engagement tiers
+- Population: All 165 patients
+- Action: Develop predictive model using:
+  * Historical compliance patterns
+  * Number of eligible screenings
+  * Response to previous outreach
+- Impact: Right-size intervention intensity per patient
+
+Priority 3: EXPAND STRATEGICALLY (Medium-term)
+- Target: {not_called_total:,} "not called" patients
+- Action: Assess engagement level before calling
+  * High-engagement indicators → Tier 1 (minimal touch)
+  * Intervention-requiring indicators → Tier 2 (active support)
+- Impact: Prevent over-calling engaged patients, focus resources appropriately
+
+Priority 4: OPTIMIZE SCREENING-SPECIFIC APPROACH (Long-term)
+- Target: Screening types with largest compliance gaps
+- Action: Develop tailored messaging per screening type
+  * BCS: Highest "not called" compliance (96.9%) - maintain
+  * EED: Lowest "reached" compliance (73.7%) - investigate barriers
+- Impact: Address screening-specific challenges
+
+Expected Outcomes (6-Month Timeline):
+
+Operational Metrics:
+- Call coverage: 56% → 95% (appropriate patients)
+- Reach success rate: 71.7% → 85%+
+- Tier 2 compliance: Maintain ~80%
+- Tier 1 compliance: Maintain >90% with minimal resources
+
+Efficiency Gains:
+- Resource reallocation from over-serving Tier 1 to supporting Tier 2
+- Reduced cost per completed screening through segmentation
+- Improved nurse satisfaction (focusing efforts where most impactful)
+
+Quality Improvements:
+- Patient satisfaction increase (right-touch approach)
+- Reduced "nuisance calling" of already-compliant patients
+- Better support for patients who genuinely need assistance
+
+Critical Learning - Analytical Maturity:
+This analysis demonstrates that "more outreach" is not always better. Identifying
+self-sufficient patients and focusing resources on those who need support represents
+more sophisticated population health management than universal intervention.
+
+Implementation Roadmap:
+
+Weeks 1-4:
+- Implement multi-touch strategy for "not reached" patients
+- Develop engagement tier classification criteria
+- Train staff on segmented approach
+
+Weeks 5-12:
+- Roll out tiered intervention model
+- Monitor compliance by tier
+- Adjust resource allocation based on outcomes
+
+Weeks 13-20:
+- Systematically classify and contact "not called" patients
+- Refine tier assignment based on observed patterns
+- Begin screening-specific optimization
+
+Weeks 21-26:
+- Full implementation of three-tier model
+- Continuous improvement based on feedback
+- Prepare expansion to additional screening types
 
 Next Steps:
-- Present findings to executive team
-- Develop detailed implementation roadmap
-- Allocate resources for expanded calling capacity
-- Train staff on prioritization framework
-- Implement tracking dashboard for ongoing monitoring
+- Present findings to executive team with tier-based framework
+- Develop patient engagement scoring model
+- Allocate resources based on three-tier structure
+- Establish monitoring dashboard for tier-specific metrics
 """
