@@ -278,7 +278,7 @@ THEN latest_call_date MUST be null
 df.loc[df['reached_ind'] == 'not called', 'latest_call_date'] = pd.NaT
 ```
 
-**Inconsistencies Fixed:** [X] records had `reached_ind = 'not called'` but contained a call date
+**Inconsistencies Fixed:** records had `reached_ind = 'not called'` but contained a call date
 
 **Justification:** Logical impossibility to have call date without calling patient
 
