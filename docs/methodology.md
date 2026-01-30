@@ -391,9 +391,9 @@ compliance_by_eligibility = patient_metrics.groupby('total_eligible_screenings')
 
 **Step 5: Identify Patterns**
 
-- Best performing group: [X] screening(s) with [XX.X]% compliance
-- Worst performing group: [X] screenings with [XX.X]% compliance
-- Compliance gap: [XX.X] percentage points
+- Best performing group: 1 screening(s) with 100.00% compliance
+- Worst performing group: 16 screenings with 25.0% compliance
+- Compliance gap: 75.0 percentage points
 
 **Step 6: Visualization**
 
@@ -403,7 +403,7 @@ compliance_by_eligibility = patient_metrics.groupby('total_eligible_screenings')
 **Interpretation:**
 - Patients with single screenings show highest compliance (100% in some groups)
 - Patients with 4+ screenings face compliance challenges
-- Volume concentrated in [X]-screening group
+- Volume concentrated in 1-screening group (49 patients)
 
 ---
 
@@ -499,7 +499,7 @@ df_reached['days_to_completion'] = (
 - Mean: 85.8 days
 - Median: 30.0 days
 - Min: 0 days (same day)
-- Max: [XXX] days
+- Max: 340 days
 
 **Interpretation:**
 - Long intervention lag suggests delayed or cumulative effects
@@ -561,7 +561,7 @@ priority_matrix = patient_analysis.groupby(
 
 **Key Segments Identified:**
 - High-priority: Patients with 3+ screenings, not called/not reached
-- Volume: [XXX] patients
+- Volume: 36 patients
 - Opportunity: Lower baseline compliance + expansion potential
 
 ---
